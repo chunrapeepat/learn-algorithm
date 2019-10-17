@@ -23,7 +23,7 @@ int main() {
             if (p > maxL) maxL = p;
         }
 
-        cout << innerMax << " " << max(l - minL, maxL) << endl;
+        cout < innerMax << " " << max(l - minL, maxL) << endl;
     }
 
     return 0;
