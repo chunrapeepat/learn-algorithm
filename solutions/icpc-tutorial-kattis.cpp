@@ -25,6 +25,14 @@ typedef unsigned long long ull;
 
 using namespace std;
 
+ll factorial(int n)
+{
+    if(n > 1)
+        return n * factorial(n - 1);
+    else
+        return 1;
+}
+
 int main () {
     FAST_IO
 
@@ -32,37 +40,26 @@ int main () {
     int t; cin >> t;
 
     if (t == 1) {
-        int sum = n;
-        int alN = n;
-        bool lte = false;
-        for (int i = 1; i < n; i++){
-            sum *= --alN;
-            if (m < sum) {
-                lte = true;
-                break;
-            }
-        }
-        if (lte && m < sum) {
+        if (n >= 13) {
             PRINT("LTE")
         } else {
-            PRINT("AC")
+            if (m < factorial(n)) {
+                PRINT("LTE")
+            } else {
+                PRINT("AC")
+            }
         }
     }
 
     if (t == 2) {
-        int sum = 1;
-        bool lte = false;
-        FOR(i, 1, n + 1) {
-            sum *= 2;
-            if (m < sum) {
-                lte = true;
-                break;
-            }
-        }
-        if (lte && m < sum) {
+        if (n >= 30) {
             PRINT("LTE")
         } else {
-            PRINT("AC")
+            if (m < pow(2, n)) {
+                PRINT("LTE")
+            } else {
+                PRINT("AC")
+            }
         }
     }
 
