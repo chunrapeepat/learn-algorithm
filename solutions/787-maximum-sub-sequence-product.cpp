@@ -3,7 +3,6 @@
 
 using namespace std;
 
-// I got Time Limit Exceed on this problem, Don't know when to exit program
 int main() {
     while (1) {
         vector<int> v;
