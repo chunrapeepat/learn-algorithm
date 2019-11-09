@@ -11,20 +11,6 @@ int main() {
     int last = k + (3*n - 1);
     vector<vector<int>> result;
 
-//    int ab = 0;
-//    int c = 0;
-//    for (int i = n; i <= last; ++i) {
-//        if (i <= last - n)  {
-//            ab += i;
-//        } else {
-//            c += i;
-//        }
-//    }
-//    if (ab > c) {
-//        cout << -1 << endl;
-//        return 0;
-//    }
-
     int curr = last - n + 1;
     int l = k;
     int r = last - n;
@@ -46,11 +32,11 @@ int main() {
             continue;
         }
 
-        vector<int> gg = vector<int>(3);
-        gg[0] = l;
-        gg[1] = r;
-        gg[2] = curr;
-        result.push_back(gg);
+        vector<int> temp = vector<int>(3);
+        temp[0] = l;
+        temp[1] = r;
+        temp[2] = curr;
+        result.push_back(temp);
 
         l++;
         r--;
@@ -70,11 +56,11 @@ int main() {
                 return 0;
             }
 
-            vector<int> gg = vector<int>(3);
-            gg[0] = v_skip[l];
-            gg[1] = v_skip[r];
-            gg[2] = curr;
-            result.push_back(gg);
+            vector<int> temp = vector<int>(3);
+            temp[0] = v_skip[l];
+            temp[1] = v_skip[r];
+            temp[2] = curr;
+            result.push_back(temp);
 
             curr++;
             l++;
