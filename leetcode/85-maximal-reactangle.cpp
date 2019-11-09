@@ -1,3 +1,67 @@
+// O(n^2) solution (AC)
+class Solution {
+public:
+    int largestRectangleArea(vector<int>& heights) {
+        const int n = heights.size();
+        if (n == 0) return 0;
+
+        vector<int> lessLeft = vector<int>(n);
+        vector<int> lessRight = vector<int>(n);
+        lessLeft[0] = -1;
+        lessRight[n-1] = n;
+
+        for (int i = 1; i < n; ++i) {
+            int p = i - 1;
+            while (p >= 0 && heights[p] >= heights[i]) {
+                p = lessLeft[p];
+            }
+            lessLeft[i] = p;
+        }
+
+        for (int i = n-2; i >= 0; --i) {
+            int p = i + 1;
+            while (p < n && heights[p] >= heights[i]) {
+                p = lessRight[p];
+            }
+            lessRight[i] = p;
+        }
+
+        int result = 0;
+        for (int i = 0; i < n; ++i) {
+            result = max(result, heights[i] * (lessRight[i] - lessLeft[i] - 1));
+        }
+        return result;
+    }
+
+    int maximalRectangle(vector<vector<char>>& mat) {
+        if (mat.size() == 0) return 0;
+        const int n = mat.size();
+        const int m = mat[0].size();
+
+        vector<vector<int>> row = vector<vector<int>>(n, vector<int>(m));
+
+        // calculate row (sum)
+        for (int i = 0; i < n; ++i) {
+            for (int j = 0; j < m; ++j) {
+                if (mat[i][j] == '1') {
+                    row[i][j] = (i-1 < 0 ? 0 : row[i-1][j]) + 1;
+                }
+            }
+        }
+
+        // find largest rectangle
+        int result = 0;
+        for (int i = 0; i < n; ++i) {
+            int area = largestRectangleArea(row[i]);
+            if (area > result) {
+                result = area;
+            }
+        }
+
+        return result;
+    }
+};
+
 // O(n^4) solution (Got TLE)
 class Solution {
 public:
