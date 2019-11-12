@@ -31,75 +31,27 @@ bool is_same_sign(int x, int y) {
     return (x >= 0) ^ (y < 0);
 }
 
+ll max(ll a, ll b) {
+    if (a > b) return a;
+    return b;
+}
+
 int main() {
     FAST_IO;
-    int n, x; cin >> n >> x;
-    vi A;
+    ll n, x; cin >> n >> x;
+    vector<ll> A;
     while (n--) {
-        int num; cin >> num;
+        ll num; cin >> num;
         A.push_back(num);
     }
-    int result = 0;
-    int l = -1;
-    int r = -1;
-    int v = x > 0 ? INT_MIN : INT_MAX;
-    if (x > 0) {
-        // find max
-        vi dp(A.size());
-        for (int i = 0; i < A.size(); ++i) {
-            int dp_prev = (i-1 >= 0) ? dp[i-1] : 0;
-            if (dp_prev + A[i] > A[i]) {
-                dp[i] = dp_prev + A[i];
-                ++r;
-            } else {
-                dp[i] = A[i];
-                l = r = i;
-            }
-            if (dp[i] > v) {
-                v = dp[i];
-            }
-        }
-    } else if (x < 0) {
-        // find min
-        vi dp(A.size());
-        int minV = INT_MAX;
-        for (int i = 0; i < A.size(); ++i) {
-            int dp_prev = (i-1 >= 0) ? dp[i-1] : 0;
-            if (dp_prev + A[i] < A[i]) {
-                dp[i] = dp_prev + A[i];
-                ++r;
-            } else {
-                dp[i] = A[i];
-                l = r = i;
-            }
-            if (dp[i] < v) {
-                v = dp[i];
-            }
-        }
-    }
-
-    if (is_same_sign(x, v) && x != 0) {
-        for (int i = l; i <= r; ++i) {
-            A[i] = A[i] * x;
-        }
-    }
-
-    int maxV = -1;
-    vi dp(A.size());
+    ll result, best1, best2, best3;
+    result = best1 = best2 = best3 = 0;
     for (int i = 0; i < A.size(); ++i) {
-        int dp_prev = (i-1 >= 0) ? dp[i-1] : 0;
-        if (dp_prev + A[i] > A[i]) {
-            dp[i] = dp_prev + A[i];
-            ++r;
-        } else {
-            dp[i] = A[i];
-            l = r = i;
-        }
-        if (dp[i] > maxV) {
-            maxV = dp[i];
-        }
+        best3 = max(0, max(A[i], max(best1 + A[i], max(best2 + A[i], best3 + A[i]))));
+        best2 = max(0, max(x * A[i], max(best1 + x * A[i], best2 + x * A[i])));
+        best1 = max(0, max(A[i], best1 + A[i]));
+        result = max(best1, max(best2, best3));
     }
-
-    cout << max(maxV, 0) << endl;
+    cout << result << endl;
     return 0;
 }
