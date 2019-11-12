@@ -30,26 +30,26 @@ typedef vector<bool> vb;
 int main() {
     int n; cin >> n;
     string number; cin >> number;
-    int c8 = 0;
-    int n8 = 0;
-    int cnt = 0;
+
+    int turn1 = (n - 11) / 2;
+    int turn2 = turn1;
+
+    string res = "";
     for (int i = 0; i < n; ++i) {
         if (number[i] == '8') {
-            ++c8;
-            n8 += cnt;
-            cnt = 0;
+            if (turn1 > 0) --turn1;
+            else res += number[i];
         } else {
-            ++cnt;
+            if (turn2 > 0) --turn2;
+            else res += number[i];
         }
     }
-    int turn = n - 11;
-    n8 = n8 - ((turn / 2) + (turn % 2));
-    c8 = c8 - (turn / 2);
 
-    if (c8 > 0 && n8 <= 0) {
+    if (res[0] == '8') {
         cout << "Yes" << endl;
     } else {
         cout << "No" << endl;
     }
+
     return 0;
 }
