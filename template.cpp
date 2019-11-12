@@ -22,6 +22,7 @@ typedef long long ll;
 typedef unsigned long long ull;
 typedef vector<int> vi;
 typedef vector<vi> vvi;
+typedef vector<bool> vb;
 #define FAST_IO ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 #define pb push_back
 #define mp make_pair
