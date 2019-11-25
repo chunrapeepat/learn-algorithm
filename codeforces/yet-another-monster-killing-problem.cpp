@@ -27,61 +27,54 @@ typedef vector<bool> vb;
 #define pb push_back
 #define mp make_pair
 
-struct sort_pred {
-    bool operator()(const std::pair<int,int> &left, const std::pair<int,int> &right) {
-        return left.second > right.second;
-    }
-};
+const int N = int(2e5) + 99;
 
-ll min(ll a, ll b) {
-    if (a < b) return a;
-    return b;
-}
+int t;
+int n;
+int a[N];
+int m;
+int p[N], s[N];
+int bst[N];
 
 int main() {
-    FAST_IO;
-    int t; cin >> t;
-    while (t--) {
-        int m; cin >> m;
-        vector<ll> monsters(m);
-        for (int i = 0; i < m; ++i) {
-            ll mon; cin >> mon;
-            monsters[i] = mon;
+    scanf("%d", &t);
+    for(int tc = 0; tc < t; ++tc){
+        scanf("%d", &n);
+        for(int i = 0; i <= n; ++i) bst[i] = 0;
+        for(int i = 0; i < n; ++i)
+            scanf("%d", a + i);
+        scanf("%d", &m);
+        for(int i = 0; i < m; ++i){
+            scanf("%d %d", p + i, s + i);
+            bst[s[i]] = max(bst[s[i]], p[i]);
         }
-        int h; cin >> h;
-        vector<pair<ll, ll>> heros(h);
-        for (int i = 0; i < h; ++i) {
-            ll p, s; cin >> p >> s;
-            heros.push_back(mp(p, s));
-        }
-        sort(heros.begin(), heros.end(), sort_pred());
-        vector<vector<ll>> dp(h, vector<ll>(m));
-        for (int i = 0; i < h; ++i) {
-            int counter = 1;
-            for (int j = 0; j < m; ++j) {
-                ll prev_dp = (i-1 >= 0) ? dp[i-1][j] : INT_MAX;
-                if (monsters[j] > heros[i].first) {
-                    counter = 1;
-                    dp[i][j] = INT_MAX;
-                    continue;
-                }
-//                cout << i << " " << heros[i].second << " " << counter << endl;
-                if (heros[i].second <= counter) {
-                    ++counter;
-                }
-                dp[i][j] = min(prev_dp, counter);
-                if (dp[i][j] == prev_dp && dp[i][j] != counter) {
-                    counter = 1;
-                }
+        for(int i = n - 1; i >= 0; --i)
+            bst[i] = max(bst[i], bst[i + 1]);
+
+
+        int pos = 0;
+        int res = 0;
+        bool ok = true;
+        while(pos < n){
+            ++res;
+            int npos = pos;
+            int mx = 0;
+            while(true){
+                mx = max(mx, a[npos]);
+                if(mx > bst[npos - pos + 1]) break;
+                ++npos;
             }
-        }
-        for (int i = 0; i < h; ++i) {
-            for (int j = 0; j < m; ++j) {
-                cout << dp[i][j] << " ";
+
+            if(pos == npos){
+                ok = false;
+                break;
             }
-            cout << endl;
+            pos = npos;
         }
-        cout << endl;
+
+        if(!ok) res = -1;
+        printf("%d\n", res);
     }
+
     return 0;
 }
