@@ -4,8 +4,6 @@
 
 using namespace std;
 
-typedef long long ll;
-
 int main() {
     int t; cin >> t;
     while (t--) {
@@ -22,10 +20,6 @@ int main() {
         A[0] -= min(diff, A[2]);
         A[2] = max(0, A[2] - diff);
 
-//        if (A[2] == 0) {
-//            cout << min(A[0], A[1]) + minV << endl;
-//        } else {
-//        }
         cout << min(A[0]-A[2]/2-(A[2]%2), A[1]-A[2]/2) + minV << endl;
     }
     return 0;
