@@ -1,4 +1,3 @@
-// got Wrong Answer on Test 65
 #include <iomanip>
 #include <iostream>
 #include <sstream>
@@ -28,32 +27,40 @@ typedef vector<bool> vb;
 #define pb push_back
 #define mp make_pair
 
-bool compare(string &s1,string &s2) {
-    return s1.size() > s2.size();
+const int N = (int) 2e5 + 100;
+vector<int> graph[N];
+bool used[N];
+
+void addEdge(int u, int v) {
+    graph[u].pb(v);
+    graph[v].pb(u);
+}
+
+void dfs(int i) {
+    used[i] = true;
+
+    for (int to : graph[i]) {
+        if (!used[to]) dfs(to);
+    }
 }
 
 int main() {
-    int t; cin >> t;
-    map<char, bool> chk;
-    vector<string> S(t);
-    for (int i = 0; i < t; ++i) {
+    int n; cin >> n;
+
+    for (int i = 0; i < n; ++i) {
         string s; cin >> s;
-        S[i] = s;
-    }
-    sort(S.begin(), S.end(), compare);
-    int res = 0;
-    for (int i = 0; i < t; ++i) {
-        bool ok = true;
-        for (int j = 0; j < S[i].size(); ++j) {
-            if (chk.find(S[i][j]) == chk.end()) {
-                ok = false;
-                chk.insert({S[i][j], true});
-            }
-        }
-        if (!ok) {
-            ++res;
+        for (char c : s) {
+            addEdge(i, n + c - 'a');
         }
     }
-    cout << res << endl;
+
+    int CC = 0;
+    for (int i = n; i < n+26; ++i) {
+        if (!graph[i].empty() && !used[i]) {
+            dfs(i);
+            ++CC;
+        }
+    }
+    cout << CC << endl;
     return 0;
 }
