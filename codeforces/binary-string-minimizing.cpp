@@ -30,20 +30,33 @@ typedef vector<bool> vb;
 int main() {
     int q; cin >> q;
     while (q--) {
-        int n, k; cin >> n >> k;
+        ll n, k; cin >> n >> k;
         string s; cin >> s;
-        int i = 0;
+        string res = "";
         int cnt = 0;
-        while (i < n && cnt < k) {
-            if (s[i] == '1' && s[i+1] == '0') {
-                swap(s[i], s[i+1]);
-                i = 0;
+        bool ok = false;
+        for (ll i = 0; i < s.length(); ++i) {
+            if (s[i] == '1') {
                 ++cnt;
             } else {
-                ++i;
+                if (k >= cnt) {
+                    k -= cnt;
+                    res += '0';
+                } else {
+                    res += string(cnt - k, '1');
+                    res += '0';
+                    res += string(k, '1');
+                    res += s.substr(i + 1);
+                    cout << res << endl;
+                    ok = true;
+                    break;
+                }
             }
         }
-        cout << s << endl;
+        if (!ok) {
+            res += string(cnt, '1');
+            cout << res << endl;
+        }
     }
     return 0;
 }
