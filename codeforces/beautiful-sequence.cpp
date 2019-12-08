@@ -1,4 +1,3 @@
-// Can't Solve :(
 #include <iomanip>
 #include <iostream>
 #include <sstream>
@@ -29,49 +28,38 @@ typedef vector<bool> vb;
 #define mp make_pair
 
 int main() {
-    vi pick(4);
-    vi res;
-    int a, b, c, d;
-    for (int i = 0; i < 4; ++i) {
-        cin >> pick[i];
-    }
-    a = pick[0];
-    b = pick[1];
-    c = pick[2];
-    d = pick[3];
-    res.pb(0); pick[0]--;
-    for (int i = 0; i < 3; ++i) {
-        while (pick[i] > 0 && pick[i+1] > 0) {
-            if (pick[i] >= pick[i+1]) {
-                res.pb(i);
-                res.pb(i+1);
-                pick[i]--;
-                pick[i+1]--;
+    vi nums(4); cin >> nums[0] >> nums[1] >> nums[2] >> nums[3];
+    int total = nums[0] + nums[1] + nums[2] + nums[3];
+    for (int st = 0; st < 4; ++st) if (nums[st]) {
+        vi res;
+        vi ths = nums;
+        int pos = st;
+
+        --ths[pos];
+        res.pb(pos);
+
+        for (int i = 0; i < total - 1; ++i) {
+            if (pos - 1 >= 0 && ths[pos - 1]) {
+                res.pb(pos - 1);
+                ths[pos - 1]--;
+                pos--;
+            } else if (pos + 1 < 4 && ths[pos + 1]) {
+                res.pb(pos + 1);
+                ths[pos + 1]--;
+                pos++;
             } else {
-                res.pb(i+1);
-                res.pb(i);
-                pick[i+1]--;
-                pick[i]--;
+                break;
             }
         }
-    }
-    for (int i = 0; i < 4; ++i) {
-        if (pick[i] > 0) {
-            res.pb(i);
+        if (res.size() == total) {
+            cout << "YES" << endl;
+            for (int i = 0; i < total; ++i) {
+                cout << res[i] << " ";
+            }
+            cout << endl;
+            return 0;
         }
     }
-    bool ok = true;
-    for (int i = 0; i < res.size()-1; ++i) {
-        if (abs(res[i] - res[i+1]) != 1) ok = false;
-    }
-    if (res.size() != (a+b+c+d) || !ok) {
-        cout << "NO" << endl;
-    } else {
-        cout << "YES" << endl;
-        for (int i = 0; i < res.size(); ++i) {
-            cout << res[i] << " ";
-        }
-        cout << endl;
-    }
+    cout << "NO" << endl;
     return 0;
 }
