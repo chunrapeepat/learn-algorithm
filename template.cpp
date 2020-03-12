@@ -39,6 +39,6 @@ int nCr(int n, int r) {
 }
 
 int main() {
-    // type your code here
+    // type your code here...
     return 0;
 }
