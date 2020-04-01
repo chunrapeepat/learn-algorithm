@@ -1,4 +1,5 @@
 // Thompson construction algorithm (RE to NFA)
+// Rapeepat Kaewprasit 6010405408
 #include <iostream>
 #include <stack>
 #include <list>
