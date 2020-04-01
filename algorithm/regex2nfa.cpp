@@ -57,8 +57,24 @@ public:
     }
 };
 
-NFA* star(NFA* operand) {
+NFA* star(NFA* n) {
+    int size = n->states.size() + 2;
+    NFA* result = new NFA(size);
 
+    result->transitions.push_back(new Transition(0, 1, 'E'));
+
+    // copy state to result
+    for (auto t: n->transitions){
+        result->transitions.push_back(new Transition(t->from + 1, t->to + 1, t->symbol));
+    }
+
+    result->transitions.push_back(new Transition(n->states.size(),n->states.size() + 1, 'E'));
+    result->transitions.push_back(new Transition(n->states.size(), 1, 'E'));
+    result->transitions.push_back(new Transition(0, n->states.size() + 1, 'E'));
+
+    result->finalState = n->states.size() + 1;
+
+    return result;
 }
 
 NFA* concat(NFA* n, NFA* m) {
