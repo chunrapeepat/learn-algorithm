@@ -195,8 +195,8 @@ NFA* compile(string regex) {
                     }
                 }
             } else if (currentChar == '*') {
-                operands.push(star(operands.top()));
-                operands.pop();
+                NFA* a = operands.top(); operands.pop();
+                operands.push(star(a));
                 ccflag = true;
             } else if (currentChar == '(') {
                 operators.push(currentChar);
