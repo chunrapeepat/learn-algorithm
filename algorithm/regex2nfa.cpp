@@ -77,8 +77,30 @@ NFA* concat(NFA* n, NFA* m) {
 }
 
 // actually this is union
-NFA* U(NFA* a, NFA* b) {
+NFA* U(NFA* n, NFA* m) {
+    int size = n->states.size() + m->states.size() + 2;
+    NFA* result = new NFA(size);
 
+    // branching of q0 to beginning of n with empty string
+    result->transitions.push_back(new Transition(0, 1, 'E'));
+    for (auto t: n->transitions){
+        result->transitions.push_back(new Transition(t->from + 1, t->to + 1, t->symbol));
+    }
+
+    // transition from last n to final state with empty string
+    result->transitions.push_back(new Transition(n->states.size(), n->states.size() + m->states.size() + 1, 'E'));
+    // branching of q0 to beginning of m with empty string
+    result->transitions.push_back(new Transition(0, n->states.size() + 1, 'E'));
+
+    for (auto t: m->transitions){
+        result->transitions.push_back(new Transition(t->from + n->states.size() + 1, t->to + n->states.size() + 1, t->symbol));
+    }
+
+    // transition from last m to final state
+    result->transitions.push_back(new Transition(m->states.size() + n->states.size(), n->states.size() + m->states.size() + 1, 'E'));
+    result->finalState = n->states.size() + m->states.size() + 1;
+
+    return result;
 }
 
 NFA* compile(string regex) {
