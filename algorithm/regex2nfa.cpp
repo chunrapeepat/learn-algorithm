@@ -21,9 +21,19 @@ public:
 class Validator {
 public:
     static bool isAlphabet(char c) {
-        return true;
+        return (c >= 'a' && c <= 'z') || (c == 'E');
+    }
+    static bool isOperator(char c) {
+        return c == '(' || c == ')' || c == '*' || c == '|';
     }
     static bool isValidRegex(string regex) {
+        if (regex.length() == 0) {
+            return false;
+        }
+        for (char c: regex) {
+            if (!(isOperator(c) || isAlphabet(c)))
+                return false;
+        }
         return true;
     }
 };
@@ -54,6 +64,7 @@ public:
         for (auto t: transitions){
             printf("%d ------ %c ------> %d\n", t->from, t->symbol, t->to);
         }
+        printf("Final State: %d\n", finalState);
     }
 };
 
