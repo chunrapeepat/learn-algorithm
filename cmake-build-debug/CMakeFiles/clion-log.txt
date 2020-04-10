@@ -1,0 +1,4 @@
+"/Users/chunza2542/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/201.6668.86/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/chunza2542/Documents/learn-algorithm
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/chunza2542/Documents/learn-algorithm/cmake-build-debug

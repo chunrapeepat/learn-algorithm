@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="learn_algorithm"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="learn_algorithm">
+				<Option output="/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/learn_algorithm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 learn_algorithm"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="learn_algorithm/fast">
+				<Option output="/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/learn_algorithm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 learn_algorithm/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/chunza2542/Documents/learn-algorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/2015-world-final/A-amalgamated-artichokes.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/2019-acm-preliminary/atoms.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/2019-acm-preliminary/ball.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/2019-acm-preliminary/permutation.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/C/hello.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/algorithm/regex2nfa.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/atcoder/100-to-105.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/atcoder/average-length.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/atcoder/circle.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/atcoder/echo.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/atcoder/non-triangular-tripet.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/atcoder/november-30.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/atcoder/sum-of-two-integer.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/atcoder/swaps.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/atcoder/tax-rate.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/alarm-clock-everywhere.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/antenna-coverage.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/archer.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/array-splitting.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/beautiful-array.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/beautiful-number.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/beautiful-regional-contest.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/beautiful-sequence.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/beautiful-string.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/binary-string-minimizing.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/character-swap-easy.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/character-swap-hard.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/constanze-machine.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/die-roll.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/dominated-subarray.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/dreamoon-and-wifi.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/everyone-is-a-winner.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/game-with-telephone-number.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/good-ol-number-coloring.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/majic-stick.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/make-them-similar.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/maximum-square.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/nearest-opposite-parity.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/obtain-two-zeros.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/pin-codes.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/platform-jumpping.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/power-product.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/power-transmission.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/remove-one-element.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/restricted-rps.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/reverse-substring.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/secret-password.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/snow-walking-robot.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/suits.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/sweet-problem.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/thanos-sort.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/three-friends.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/two-rival-students.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/yet-another-broken-keyboard.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/codeforces/yet-another-monster-killing-problem.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/excercises/7-geometry/7-2-1-1.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/excercises/7-geometry/7-2-1-2.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/leetcode/1028.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/leetcode/1155-number-of-dice-rolls-with-target-sum.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/leetcode/1277-count-square-submatrices.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/leetcode/152-maximum-product-subarray.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/leetcode/312-burst-balloon.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/leetcode/343-integer-break.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/leetcode/518-coin-change-2.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/leetcode/5255-cells-with-odd-values-in-matrix.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/leetcode/5256-reconstruct-a-2-row-binary-matrix.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/leetcode/5257-number-of-closed-islands.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/leetcode/646-maximum-length-of-pair-chain.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/leetcode/84-largest-rectangle-histogram.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/leetcode/85-maximal-reactangle.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/leetcode/973-k-closest-point-to-origin.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/10140-prime-number.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/10305-ordering-tasks.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/10394-twin-prime.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/108-maximum-sum.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/10814-fragtion.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/11388-gcd-lcm.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/12279-emoogle-balance.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/12280-digital-satire.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/12282-omnigravity.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/12582-wedding-of-sultan.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/13148-a-giveaway.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/13153-number-of-connected-components.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/13271-brick-walls.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/13272-bracket-sequence.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/13272-christmas-tree.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/13276-megamind.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/1730-MSLCM.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/2048-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/4-thought-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/572-oil-deposits.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/787-maximum-sub-sequence-product.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/AngryBirdsTransformers13278.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/acm2014/and-or.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/acm2014/decoding-baby-boos.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/ants-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/apaxian-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/backspace-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/bars.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/counting-triangle-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/event-planning.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/floating-point-hazard-2018.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/flow-layout.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/freefood-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/hoppers-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/how-do-you-add.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/icpc-tutorial-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/jumping-mario.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/largest-allowed-area-2018.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/loo-rolls-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/minesweeper.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/non-primes-factor.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/owellen.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/pivot-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/potentiometer.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/radio-commercial-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/recount-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/running-steps-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/secret-santa-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/shopaholic-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/simple-equations.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/speed-limit-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/spliting-number.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/swap2sort-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/symmetric-order-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/tray-bien-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/visual-algo-quiz-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/wedding-shopping.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/solutions/yoda-kattis.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/template.cpp">
+			<Option target="learn_algorithm"/>
+		</Unit>
+		<Unit filename="/Users/chunza2542/Documents/learn-algorithm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
