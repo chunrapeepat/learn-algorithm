@@ -1,3 +1,4 @@
+// template-cpp-algor
 #include <iomanip>
 #include <iostream>
 #include <sstream>
@@ -61,7 +62,14 @@ int nCr(int n, int r) {
 }
 
 /* CODE START BELOW THIS POINT!!! */
+void test_case(int t) {
+
+}
 
 int main() {
+    int T; cin >> T;
+    for (int t = 1; t <= T; ++t) {
+        test_case(t);
+    }
     return 0;
 }
