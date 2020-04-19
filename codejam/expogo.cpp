@@ -69,13 +69,22 @@ bool areAllBitsSet(int n) {
         return true;
     return false;
 }
-pair<int, int> m(int x) {
-    int power_of_two = 1;
-    while (power_of_two < x || areAllBitsSet(power_of_two ^ another)) {
-        power_of_two <<= 1;
+pair<int, int> m(int x, bool is_minus) {
+    if (!is_minus) {
+        int power_of_two = 1;
+        while (power_of_two < x) {
+            power_of_two <<= 1;
+        }
+        int diff = power_of_two - x;
+        return mp(power_of_two, diff);
+    } else {
+        int power_of_two = 1;
+        while (power_of_two <= x) {
+            power_of_two <<= 1;
+        }
+        int diff = power_of_two - x;
+        return mp(diff, power_of_two);
     }
-    int diff = power_of_two - x;
-    return mp(power_of_two, diff);
 }
 void buildSolution(int t, pii mx, pii my, bool is_x, bool is_y) {
     int x = mx.first;
@@ -104,11 +113,6 @@ void buildSolution(int t, pii mx, pii my, bool is_x, bool is_y) {
 void test_case(int t) {
     int x, y; cin >> x >> y;
 
-    pii px = m(x);
-    pii py = m(y);
-    int mx = px.first | px.second;
-    int my = py.first | py.second;
-
     bool is_minus_x = false;
     bool is_minus_y = false;
     if (x < 0) {
@@ -120,8 +124,13 @@ void test_case(int t) {
         y *= -1;
     }
 
-    if(areAllBitsSet(x ^ y) && (x^y) == (x|y)) {
-        buildSolution(t, mp(x,0), mp(x,0), is_minus_x, is_minus_y);
+    pii px = m(x, is_minus_x);
+    pii py = m(y, is_minus_y);
+    int mx = px.first | px.second;
+    int my = py.first | py.second;
+
+    if(areAllBitsSet(x^y) && (x^y) == (x|y)) {
+        buildSolution(t, mp(x,0), mp(y,0), is_minus_x, is_minus_y);
     } else if (areAllBitsSet(x ^ my) && (x^my) == (x|my)) {
         buildSolution(t, mp(x,0), py, is_minus_x, false);
     } else if (areAllBitsSet(mx ^ y) && (mx^y) == (mx|y)) {
