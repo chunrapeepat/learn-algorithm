@@ -9,11 +9,11 @@ void test_case(int t) {
 
   for (int i = 0; i < n; ++i) {
     int a; cin >> a;
-    max += (a / x) + (a % x != 0);
+    max += ((a / x) + (a % x != 0));
     sum += a;
   }
 
-  int min = (sum / x) + (sum % x != 0);
+  int min = ((sum / x) + (sum % x != 0));
   cout << min << " " << max << endl;
 }
 
