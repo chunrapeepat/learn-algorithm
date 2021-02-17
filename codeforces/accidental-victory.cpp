@@ -11,10 +11,13 @@ using namespace std;
 void solve() {
   int n; cin >> n;
   vector<lli> A(n);
+  vector<lli> B(n);
   map<lli, lli> M;
 
-  for (int i = 0; i < n; ++i)
+  for (int i = 0; i < n; ++i) {
     cin >> A[i];
+    B[i] = A[i];
+  }
   sort(A.begin(), A.end());
 
   lli c = 0;
@@ -45,7 +48,7 @@ void solve() {
   vector<lli> ans;
   for (int i = 0; i < n; ++i) {
     // cout << M.find(A[i])->second << " " << A[n-1] << endl;
-    if (M.find(A[i])->second >= A[n-1]) {
+    if (M.find(B[i])->second >= A[n-1]) {
       ans.push_back(i+1);
     }
   }
